@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Himanshu Kumar – BTech CSE student at Amity University Greater Noida. Building skills in software development, cybersecurity, and AI." />
+  <title>Himanshu Kumar — Teqrift</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ░░ LOADING SCREEN ░░ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <span class="loader-brand">TEQRIFT</span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ░░ CANVAS BACKGROUND ░░ -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ░░ NAVIGATION ░░ -->
+  <header class="nav-wrap" id="navbar">
+    <nav class="nav-inner" role="navigation" aria-label="Main navigation">
+      <a href="#home" class="nav-logo">
+        <span class="logo-diamond" aria-hidden="true"></span>
+        TEQRIFT
+      </a>
+      <button class="nav-burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░
+         HERO
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+
+        <!-- Left: Text -->
+        <div class="hero-text reveal">
+          <p class="hero-eyebrow"><span class="dot-pulse" aria-hidden="true"></span>Open to collaborations &amp; learning</p>
+          <h1 class="hero-name">Himanshu<br>Kumar</h1>
+          <p class="hero-brand-tag">TEQRIFT</p>
+          <h2 class="hero-headline">Building Skills Today,<br>Creating Technology Tomorrow</h2>
+          <p class="hero-sub">BTech CSE Student at Amity University Greater Noida.<br>Currently learning programming, software development, cybersecurity fundamentals, AI concepts and modern technologies while building practical projects.</p>
+
+          <!-- Terminal ticker -->
+          <div class="ticker-wrap" aria-live="polite" aria-label="Currently learning">
+            <span class="ticker-label">Currently learning&nbsp;→&nbsp;</span>
+            <span class="ticker-text" id="ticker">C Programming</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Right: Profile Image -->
+        <div class="hero-visual reveal reveal-delay">
+          <div class="profile-frame" id="profile-frame">
+            <div class="profile-hex-outer" aria-label="Himanshu Kumar profile photo">
+              <div class="profile-hex-inner">
+                <div class="profile-scan" aria-hidden="true"></div>
+                <img src="profile.jpg" alt="Himanshu Kumar" class="profile-photo">
+              </div>
+            </div>
+            <!-- Orbit ring -->
+            <div class="orbit-ring" aria-hidden="true">
+              <div class="orbit-dot"></div>
+            </div>
+            <!-- Stat chips floating -->
+            <div class="stat-chip stat-chip-1" aria-hidden="true">
+              <span>📚</span> 1st Year BTech
+            </div>
+            <div class="stat-chip stat-chip-2" aria-hidden="true">
+              <span>⚡</span> Active Learner
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /hero-grid -->
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░
+         ABOUT
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-label reveal">About Me</div>
+        <h2 class="section-title reveal">Who I Am</h2>
+
+        <div class="about-grid">
+          <!-- Bio -->
+          <div class="about-bio glass reveal">
+            <p>I am a BTech Computer Science student at Amity University Greater Noida with a growing interest in software development, cybersecurity and artificial intelligence.</p>
+            <p>My current focus is building strong programming fundamentals, improving problem-solving skills and creating practical projects that help me learn modern technologies.</p>
+            <p>I believe in continuous learning, consistency and building real-world skills through hands-on experience.</p>
+
+            <!-- Education block inside bio -->
+            <div class="edu-block">
+              <div class="edu-icon" aria-hidden="true">🎓</div>
+              <div>
+                <p class="edu-degree">Bachelor of Technology — CSE</p>
+                <p class="edu-uni">Amity University Greater Noida</p>
+                <p class="edu-year">2025 – 2029</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards column -->
+          <div class="about-cards">
+            <div class="about-card glass reveal">
+              <span class="acard-icon" aria-hidden="true">🏛️</span>
+              <h3>Education</h3>
+              <p>Amity University Greater Noida</p>
+            </div>
+            <div class="about-card glass reveal reveal-delay">
+              <span class="acard-icon" aria-hidden="true">🔭</span>
+              <h3>Focus</h3>
+              <p>Technology Enthusiast &amp; Learner</p>
+            </div>
+            <div class="about-card glass reveal reveal-delay-2">
+              <span class="acard-icon" aria-hidden="true">🎯</span>
+              <h3>Goal</h3>
+              <p>Software Development &amp; Cybersecurity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░
+         SKILLS
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-label reveal">Skills</div>
+        <h2 class="section-title reveal">What I'm Learning</h2>
+        <p class="section-sub reveal">Honest snapshot of where I am — every skill is actively in progress.</p>
+
+        <div class="skills-grid">
+
+          <!-- Programming -->
+          <div class="skill-group glass reveal">
+            <div class="sg-header">
+              <span class="sg-icon" aria-hidden="true">💻</span>
+              <h3>Programming</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li>
+                <span class="skill-name">C</span>
+                <span class="skill-badge beginner">Beginner</span>
+              </li>
+              <li>
+                <span class="skill-name">Python</span>
+                <span class="skill-badge learning">Learning</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Core Concepts -->
+          <div class="skill-group glass reveal reveal-delay">
+            <div class="sg-header">
+              <span class="sg-icon" aria-hidden="true">🧠</span>
+              <h3>Core Concepts</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li>
+                <span class="skill-name">Problem Solving</span>
+                <span class="skill-badge learning">Learning</span>
+              </li>
+              <li>
+                <span class="skill-name">Programming Fundamentals</span>
+                <span class="skill-badge improving">Improving</span>
+              </li>
+              <li>
+                <span class="skill-name">Prompt Engineering</span>
+                <span class="skill-badge learning">Learning</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-group glass reveal">
+            <div class="sg-header">
+              <span class="sg-icon" aria-hidden="true">🛠️</span>
+              <h3>Tools</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li>
+                <span class="skill-name">Git</span>
+                <span class="skill-badge beginner">Beginner</span>
+              </li>
+              <li>
+                <span class="skill-name">GitHub</span>
+                <span class="skill-badge beginner">Beginner</span>
+              </li>
+              <li>
+                <span class="skill-name">VS Code</span>
+                <span class="skill-badge improving">Improving</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Cybersecurity & Learning Focus -->
+          <div class="skill-group glass reveal reveal-delay">
+            <div class="sg-header">
+              <span class="sg-icon" aria-hidden="true">🔒</span>
+              <h3>Learning Focus</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li>
+                <span class="skill-name">Cybersecurity Fundamentals</span>
+                <span class="skill-badge learning">Learning</span>
+              </li>
+              <li>
+                <span class="skill-name">AI Concepts</span>
+                <span class="skill-badge beginner">Beginner</span>
+              </li>
+              <li>
+                <span class="skill-name">Web Technologies</span>
+                <span class="skill-badge learning">Learning</span>
+              </li>
+            </ul>
+          </div>
+
+        </div><!-- /skills-grid -->
+      </div>
+    </section>
+
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░
+         CERTIFICATIONS
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="certifications" class="section certs">
+      <div class="container">
+        <div class="section-label reveal">Achievements</div>
+        <h2 class="section-title reveal">Certifications &amp; Activities</h2>
+
+        <!-- Certs row -->
+        <div class="cert-grid">
+          <div class="cert-card glass reveal">
+            <div class="cert-ribbon" aria-hidden="true">CERT</div>
+            <div class="cert-icon-wrap" aria-hidden="true">📜</div>
+            <h3>C Programming</h3>
+            <p>Completed foundational programming course covering variables, control flow, functions, arrays and pointers.</p>
+          </div>
+          <div class="cert-card glass reveal reveal-delay">
+            <div class="cert-ribbon" aria-hidden="true">CERT</div>
+            <div class="cert-icon-wrap" aria-hidden="true">🤖</div>
+            <h3>Basics of Google AI</h3>
+            <p>Introduction to AI concepts, tools and responsible AI practices through Google's learning pathway.</p>
+          </div>
+          <div class="cert-card glass reveal reveal-delay-2">
+            <div class="cert-ribbon" aria-hidden="true">CERT</div>
+            <div class="cert-icon-wrap" aria-hidden="true">🔒</div>
+            <h3>Malware Fundamentals</h3>
+            <p>Cybersecurity basics covering malware types, threat awareness and foundational defence concepts.</p>
+          </div>
+        </div>
+
+        <!-- Experience & Activities -->
+        <div class="section-sub-label reveal">Experience &amp; Activities</div>
+        <div class="activity-grid">
+          <div class="activity-card glass reveal">
+            <span class="activity-icon" aria-hidden="true">🎤</span>
+            <div>
+              <h3>AI Impact Summit 2026</h3>
+              <p>Attended industry sessions and explored emerging AI technologies and their real-world applications.</p>
+            </div>
+          </div>
+          <div class="activity-card glass reveal reveal-delay">
+            <span class="activity-icon" aria-hidden="true">🤝</span>
+            <div>
+              <h3>Community Outreach</h3>
+              <p>Volunteer participation in village-based community development activities.</p>
+            </div>
+          </div>
+          <div class="activity-card glass reveal reveal-delay-2">
+            <span class="activity-icon" aria-hidden="true">📚</span>
+            <div>
+              <h3>Continuous Learning</h3>
+              <p>Actively learning programming and technology through structured self-study and online platforms.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░
+         PROJECTS
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-label reveal">Projects</div>
+        <h2 class="section-title reveal">What I'm Building</h2>
+        <p class="section-sub reveal">Honest work — no fake repos, no inflated stats.</p>
+
+        <div class="project-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card glass reveal">
+            <div class="project-top">
+              <div class="project-status status-done">✓ Completed</div>
+              <div class="project-icon-large" aria-hidden="true">🗂️</div>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive personal portfolio website built using HTML, CSS and JavaScript to showcase my learning journey and projects.</p>
+            <ul class="tech-chips" role="list" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass reveal reveal-delay">
+            <div class="project-top">
+              <div class="project-status status-planned">◎ Planned Project</div>
+              <div class="project-icon-large" aria-hidden="true">🛡️</div>
+            </div>
+            <h3>AI-Powered Phishing Email Detector</h3>
+            <p>Future project idea focused on learning machine learning and cybersecurity concepts to build a phishing email detection system.</p>
+            <ul class="tech-chips" role="list" aria-label="Planned technologies">
+              <li>Python</li>
+              <li>Machine Learning</li>
+              <li>Cybersecurity</li>
+            </ul>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass reveal reveal-delay-2 project-placeholder">
+            <div class="project-top">
+              <div class="project-status status-soon">⋯ Coming Soon</div>
+              <div class="project-icon-large" aria-hidden="true">🚀</div>
+            </div>
+            <h3>More Projects Coming Soon</h3>
+            <p>Currently learning programming fundamentals and building a strong base before taking on larger, more complex projects.</p>
+            <p class="placeholder-cta">Follow along as I grow →</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░
+         CONTACT
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-label reveal">Contact</div>
+        <h2 class="section-title reveal">Let's Connect</h2>
+        <p class="section-sub reveal">Open to learning together, collaborations and feedback.</p>
+
+        <div class="contact-links-centered reveal">
+          <a href="mailto:himansh.notes@gmail.com" class="contact-link glass" aria-label="Send email">
+            <span class="cl-icon" aria-hidden="true">✉️</span>
+            <div>
+              <span class="cl-label">Email</span>
+              <span class="cl-value">himansh.notes@gmail.com</span>
+            </div>
+            <span class="cl-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/himanshu-kumar-a2308738a" target="_blank" rel="noopener noreferrer" class="contact-link glass" aria-label="LinkedIn profile">
+            <span class="cl-icon" aria-hidden="true">💼</span>
+            <div>
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-value">Connect professionally</span>
+            </div>
+            <span class="cl-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="https://github.com/himanshuKernel" target="_blank" rel="noopener noreferrer" class="contact-link glass" aria-label="GitHub profile">
+            <span class="cl-icon" aria-hidden="true">⌨️</span>
+            <div>
+              <span class="cl-label">GitHub</span>
+              <span class="cl-value">See my repositories</span>
+            </div>
+            <span class="cl-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-diamond small" aria-hidden="true"></span>
+        TEQRIFT
+      </div>
+      <p class="footer-tagline">Building technology skills one project at a time.</p>
+      <p class="footer-copy">Copyright &copy; <span id="year"></span> Himanshu Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
