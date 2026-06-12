@@ -865,16 +865,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .hero-actions { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
   
-  /* FIX: Show stat chips on mobile at smaller scale */
+  /* FIX: Hide stat chips on mobile to prevent overlap with profile image */
   .stat-chip {
-    position: static;
-    margin-bottom: 0.75rem;
-    font-size: 0.7rem;
-    padding: 0.35rem 0.75rem;
-  }
-  .stat-chip-1, .stat-chip-2 { 
-    display: inline-flex;
-    animation: none;
+    display: none !important;
   }
   
   /* Adjust profile visual for mobile */
@@ -901,10 +894,6 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .profile-hex-outer {
     width: 130px;
     height: 150px;
-  }
-  .stat-chip {
-    font-size: 0.65rem;
-    padding: 0.3rem 0.6rem;
   }
 }
 
