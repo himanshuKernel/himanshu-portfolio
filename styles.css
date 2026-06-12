@@ -837,7 +837,6 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 /* ── RESPONSIVE ─────────────────────────────────── */
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-visual { display: none; }
   .about-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
   .cert-grid { grid-template-columns: 1fr 1fr; }
