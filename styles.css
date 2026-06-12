@@ -864,10 +864,48 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .hero-name { font-size: 2.75rem; }
   .hero-actions { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
-  .stat-chip-1, .stat-chip-2 { display: none; }
+  
+  /* FIX: Show stat chips on mobile at smaller scale */
+  .stat-chip {
+    position: static;
+    margin-bottom: 0.75rem;
+    font-size: 0.7rem;
+    padding: 0.35rem 0.75rem;
+  }
+  .stat-chip-1, .stat-chip-2 { 
+    display: inline-flex;
+    animation: none;
+  }
+  
+  /* Adjust profile visual for mobile */
+  .profile-frame {
+    width: 240px;
+    height: 270px;
+    margin-top: 2rem;
+  }
+  .profile-hex-outer {
+    width: 180px;
+    height: 210px;
+  }
+  .orbit-ring {
+    inset: -12px;
+    border-width: 0.8px;
+  }
 }
 @media (max-width: 380px) {
   .hero-name { font-size: 2.2rem; }
+  .profile-frame {
+    width: 180px;
+    height: 200px;
+  }
+  .profile-hex-outer {
+    width: 130px;
+    height: 150px;
+  }
+  .stat-chip {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.6rem;
+  }
 }
 
 /* ── REDUCED MOTION ─────────────────────────────── */
