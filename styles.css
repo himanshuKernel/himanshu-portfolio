@@ -867,7 +867,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   
   /* FIX: Hide stat chips on mobile to prevent overlap with profile image */
   .stat-chip {
-    display: none !important;
+    display: flex !important;
   }
   
   /* Adjust profile visual for mobile */
