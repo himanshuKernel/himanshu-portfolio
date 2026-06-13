@@ -966,3 +966,15 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   }
   .reveal { opacity: 1; transform: none; }
 }
+@media (max-width: 640px) {
+
+  .loader-brand {
+    font-size: 1.2rem;
+    letter-spacing: 0.08em;
+  }
+
+  .loader-bar {
+    width: 140px;
+  }
+
+}
