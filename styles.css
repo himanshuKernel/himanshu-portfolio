@@ -935,6 +935,10 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
     padding: 1rem 0;
   }
   .nav-links.open { display: flex; }
+   .loader-brand {
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+}
   .nav-link { padding: 0.75rem 1rem; }
   .nav-burger { display: flex; }
   .cert-grid { grid-template-columns: 1fr; }
