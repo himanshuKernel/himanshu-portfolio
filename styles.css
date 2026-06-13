@@ -922,7 +922,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 }
 @media (max-width: 640px) {
   .nav-links {
-    display: flex;
+    display: none;
     position: fixed;
     top: var(--nav-h);
     left: 0;
@@ -934,7 +934,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
     border-radius: 0;
     padding: 1rem 0;
   }
-  .nav-links.open { display: none; }
+  .nav-links.open { display: flex; }
   .nav-link { padding: 0.75rem 1rem; }
   .nav-burger { display: flex; }
   .cert-grid { grid-template-columns: 1fr; }
@@ -944,7 +944,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .hero-actions { flex-direction: column; }
   .btn { width: 100%; justify-content: center; }
   
-  .stat-chip { display: none; }
+  .stat-chip { display: flex; }
   
   .profile-frame { width: 280px; height: 320px; }
   .profile-hex-outer { width: 220px; height: 250px; }
